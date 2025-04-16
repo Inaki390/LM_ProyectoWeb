@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Equipos - LEC & LCK</title>
+  <link rel="stylesheet" href="Equipos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <script src="Equipos.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">Legends Portal</div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../Galeria (Tienda, Campeones, Baneos, Carrusel y Randomizer)/Galeria.php">Galería y más</a></li>
+            <li><a href="../Jugadores (Inicio de sesión y Registro)/Jugadores_Registro.html">Registro</a></li>
+            <li><a href="../Jugadores (Inicio de sesión y Registro)/Jugadores_Sesion.html">Inicio de Sesión</a></li>
+            <li><a href="../Equipos(Formulario de Contacto)/Equipos.html">Equipos y Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <!-- LEC -->
+    <section class="grid-section">
+      <h2>Equipos LEC</h2>
+      <div class="grid">
+        <div class="card"><img src="img/lec/koi.png" alt="KOI"><p>KOI</p></div>
+        <div class="card"><img src="img/lec/heretics.png" alt="Team Heretics"><p>Team Heretics</p></div>
+        <div class="card"><img src="img/lec/fnatic.png" alt="Fnatic"><p>Fnatic</p></div>
+        <div class="card"><img src="img/lec/g2.png" alt="G2"><p>G2 Esports</p></div>
+      </div>
+    </section>
+
+    <!-- LCK -->
+    <section class="grid-section">
+      <h2>Equipos LCK</h2>
+      <div class="grid">
+        <div class="card"><img src="img/lck/t1.png" alt="T1"><p>T1</p></div>
+        <div class="card"><img src="img/lck/drx.png" alt="DRX"><p>DRX</p></div>
+        <div class="card"><img src="img/lck/geng.png" alt="Gen.G"><p>Gen.G</p></div>
+        <div class="card"><img src="img/lck/kt.png" alt="KT Rolster"><p>KT Rolster</p></div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section class="contact-section">
+      <h2>Contacto con Equipos</h2>
+      <form class="contact-form">
+        <label for="nombre">Tu nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="equipo">Equipo al que deseas contactar:</label>
+        <select id="equipo" name="equipo" required>
+          <option value="">-- Selecciona un equipo --</option>
+          <option>KOI</option>
+          <option>Fnatic</option>
+          <option>G2 Esports</option>
+          <option>T1</option>
+          <option>DRX</option>
+          <!-- Añade más si quieres -->
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

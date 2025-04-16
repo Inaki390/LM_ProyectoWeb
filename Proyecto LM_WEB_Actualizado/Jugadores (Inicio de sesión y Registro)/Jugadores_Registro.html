@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Registro - Legends Portal</title>
+  <link rel="stylesheet" href="Jugadores.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <script src="Jugadores.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div class="logo">Legends Portal</div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="../Galeria (Tienda, Campeones, Baneos, Carrusel y Randomizer)/Galeria.php">Galería y más</a></li>
+            <li><a href="../Jugadores (Inicio de sesión y Registro)/Jugadores_Registro.html">Registro</a></li>
+            <li><a href="../Jugadores (Inicio de sesión y Registro)/Jugadores_Sesion.html">Inicio de Sesión</a></li>
+            <li><a href="../Equipos(Formulario de Contacto)/Equipos.html">Equipos y Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Registro de Jugador</h2>
+      <form action="procesar_registro.php" method="POST" class="form">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required>
+
+        <label for="confirmar-contraseña">Confirmar Contraseña:</label>
+        <input type="password" id="confirmar-contraseña" name="confirmar-contraseña" required>
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
